@@ -22,8 +22,8 @@ model Car {
   carType     String
   company     String
   dealer      String
-  images      String[]
-  tags        String[]
+  images      Json
+  tags        Json
   userId      Int
   user        User     @relation(fields: [userId], references: [id])
   createdAt   DateTime @default(now())
